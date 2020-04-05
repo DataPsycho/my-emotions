@@ -112,8 +112,6 @@ saved can by found in the models directory and also can be load any time using
 ModelBoyLoader.
 
 Sample:
-
-Sample:
 ```python
 from modelboy.flow import ModelBoy
 from modelboy.utils import version_by_date
@@ -148,7 +146,7 @@ Model Boy also provide a `loader` function which can be used to load a model:
 from modelboy.flow import loader
 model_files = "./modellake"
 
-# load the model when not providing any
+# load the model when not providing any version the latest version is selected
 latest_classifier = loader(model_files)
 ```
 
@@ -178,6 +176,7 @@ opportunity to used them in some of my projects. By following the strict time
 limit thats what I came up with but there is a lot room for improvements. such
 as fully automated pipeline, testing and validation in automation. More 
 elaborate use of Precision, Recall instead of  average F1-score from Grid 
-Search.
+Search. Also word2vec transformer by google is proven to have better 
+performance than bag of words method which has not been evaluated here.
 
 __Thanks,__ 
