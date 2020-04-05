@@ -75,7 +75,9 @@ considered for grid search:
 
 
 It took more than 12 hours to run a test on grid search. The detail can be 
-found on `02-prototype.ipynb` in the `prototype` directory. Based on the 
+found on 
+[`02-prototype.ipynb`](https://github.com/DataPsycho/my-emotions/blob/master/prototype/02-prototype.ipynb) 
+in the `prototype` directory. Based on the 
 harmonic mean of precision and recall which is considered as f1 score the 
 decision was to go with <SVC/Logistic> model. But the SVC models looks bit over
 fitted and having not enough time to inspect the Logistic model has been 
