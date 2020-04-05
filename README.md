@@ -1,6 +1,6 @@
 # My Emotion Text Insights API
 The My Emotion Text Insights API is a ML model API for predicting the score 
-of an Instrument review in three diccerent category `satisfied`, `moderate`, 
+of an Instrument review in three different category `satisfied`, `moderate`, 
 `not-satisfied` (Labels: 2, 1, 0). The model is trained on top of Amazon 
 Musical Instrument Review data set.
 
