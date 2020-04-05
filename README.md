@@ -9,9 +9,13 @@ Musical Instrument Review data set.
 root
 |__api (api server has not been build)
 |__datalake (data storage for raw, parsed and processed data for modeling)
+    |__feed (final model data storage, not included in git)
+    |__processed (Processed data from json file, not included in git)
+    |__raw (raw json files, not included in git)
 |__etl (package for data preprocessing)
 |__modelboy (API for model training and serving)
 |__modellake (storage for trained model pkl file)
+    |__model_1 (saved trained model)
 |__prototype (Experiment Notebooks)
 |__test (testing the dataio and model pipeline)
 ```
