@@ -1,0 +1,9 @@
+datalake/feed
+datalake/processed
+datalake/raw
+.idea
+*.ipynb_checkpoints
+*__pycache__
+/distribution/dist
+/distribution/build
+/distribution/myemotion.egg-info
