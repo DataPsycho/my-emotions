@@ -4,3 +4,5 @@ matplotlib
 numpy
 spacy
 joblib
+flask
+flask-cors

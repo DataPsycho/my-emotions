@@ -1,5 +1,5 @@
 from modelboy.flow import ModelBoy
-from modelboy.utils import version_by_date
+from modelboy.utils import version_by_date, tokenizer
 from modelboy.flow import loader
 
 latest_data = version_by_date("./datalake/feed/", "csv")
