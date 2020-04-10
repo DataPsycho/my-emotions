@@ -3,8 +3,6 @@ from flask_cors import CORS
 from modelboy.flow import loader
 from .config import config_by_name, model_dir
 
-model = loader(model_dir)
-
 
 def create_app(config_obj=config_by_name, config_name=None):
     if config_name:
