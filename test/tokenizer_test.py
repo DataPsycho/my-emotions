@@ -1,19 +1,19 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 import os
-import re
 import joblib
 from modelboy.utils import tokenizer, version_by_date
 from sklearn.feature_extraction.text import TfidfVectorizer
-from modelboy.flow import loader
-import numpy as np
+
 
 latest_data = version_by_date("./datalake/feed/", "csv")
+
 
 def data_reader(path):
     """Load processed data and split in to train and test."""
     df = pd.read_csv(path)
     return df
+
 
 df = data_reader(latest_data)
 
@@ -63,8 +63,10 @@ clf.predict([a_data])
 test_data = tf_idf.transform(X_test[:3])
 clf.predict(test_data)
 
-a_text = {"text": "The experiemce was very bad, do not recommend"}
+a_text = {"text": "The experience was very good, it is highly recommend"}
 a_data = [a_text.get("text")]
 test_data = tf_idf.transform(a_data)
-class_id = clf.predict(test_data)[0]
+class_id = int(clf.predict(test_data))
 round(clf.predict_proba(test_data)[0][class_id]*100, 2)
+
+int(class_id)
